@@ -1,16 +1,13 @@
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name, hobby):
         self.name = name
-        self.age = age
-
-    def say_hello(self):
-        print(f'Hello, my name is {self.name} and I am {self.age} years old.')
+        self.hobby = hobby
 
 
-my_person = Person('Phil', 20)
+    def printInformations(self):
+        print(self.name)
+        print(self.hobby)
 
-print(my_person.name)
+p = Person("Phil", "Coding")
 
-print(my_person.age)
-
-my_person.say_hello()
+p.printInformations()
