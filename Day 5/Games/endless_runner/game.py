@@ -153,6 +153,7 @@ def increaseTimer():
     current_time += 0.000001
     player_velocity[0] = player_velocity[0] * (1 + current_time * 0.03)
     ball_velocity = ball_velocity * (1 + current_time * 0.2)
+    #Implement new formula ball_velocity = f(x)=x^(2-90 x^(2+4^(4)))
 
 def event_Manager():
     for event in pygame.event.get():
